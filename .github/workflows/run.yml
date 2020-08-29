@@ -5,8 +5,8 @@ on:
     branches: master
   watch:
     types: started
-  #schedule:
-    #- cron: 15 20 * * *
+  schedule:
+    - cron: 0/15 * * * ?
 
 jobs:
   go-url:
@@ -18,7 +18,3 @@ jobs:
     - name: go url 1
       run: | 
         curl -L "http://${{ secrets.u1 }}/wk/cron.php"
-      
-    - name: go url 2
-      run: |
-        curl -L "http://${{ secrets.u1 }}/epg/hn.php"
