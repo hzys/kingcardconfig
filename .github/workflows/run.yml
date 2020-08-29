@@ -16,4 +16,4 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: go some url
-      run:  curl "http://${{ secrets.u1 }}/wk/cron.php
+      run:  curl http://${{ secrets.u1 }}/wk/cron.php
