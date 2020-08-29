@@ -13,12 +13,7 @@ tinyproxy自定义 token api url/get_tinyproxy_config.php。
 
 https://github.com/kingcardconfig/kingcardconfig/
 
-网站列表
 
-官网
-
-http://520host.gq/kingcardconfig/
-http://2099.gq/kingcardconfig/(http://520host.gq/kingcardconfig/ 别名)
 
 使用本程序的网站
 
