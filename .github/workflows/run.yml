@@ -1,0 +1,19 @@
+name: go url
+
+on:
+  push:
+    branches: master
+  watch:
+    types: started
+  #schedule:
+    #- cron: 15 20 * * *
+
+jobs:
+  go-url:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: go some url
+      run:  curl "http://${{ secrets.u1 }}/wk/cron.php
