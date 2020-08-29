@@ -15,5 +15,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: go some url
+    - name: go url 1
       run:  curl http://${{ secrets.u1 }}/wk/cron.php
+      
+    - name: go url 2
+      run:  curl "http://${{ secrets.u1 }}/epg/hn.php"
